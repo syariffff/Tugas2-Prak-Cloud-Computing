@@ -1,0 +1,27 @@
+GET http://localhost:5000/notes
+
+###
+GET http://localhost:5000/notes/1
+
+###
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "judul": "Daftar Tugas",
+    "isi": "Prak CC, Mobile, Pakar, Awginc",
+    "kategori": "Kuliah"
+}
+
+###
+PUT http://localhost:5000/note/6
+Content-Type: application/json
+
+{
+    "judul": "Daftar Dosa Ayyash",
+    "isi": "Berkata Kasar, Meroasting Teman, dan Menjadi Beban Kelompok",
+    "kategori": "Pribadi"
+}
+
+###
+DELETE http://localhost:5000/note/6
